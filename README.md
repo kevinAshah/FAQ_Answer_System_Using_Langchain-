@@ -1,71 +1,56 @@
 
-# Data Analytics Academy Q&A: Question and Answer System Based on Google Palm LLM and Langchain for E-learning company  
+# Data Analytics Academy Q&A System
 
-This is an end to end LLM project based on Google Palm and Langchain. We are building a Q&A system for an e-learning company called Data Analytics Academy. It sells data related courses and bootcamps. This system will provide a streamlit based user interface for students where they can ask questions and get answers. 
+Welcome to the Data Analytics Academy Q&A System, a project leveraging advanced technologies to enhance the learning experience for students enrolled in data-related courses and bootcamps. This end-to-end project is based on Google Palm LLM (Large Language Model) and Langchain, designed to create a seamless question and answer (Q&A) platform.
 
 ![](Data_Analytics_QnA.jpg)
 
-## Project Highlights
+## Project Overview
 
-- Use a real CSV file of FAQs that Codebasics company is using right now. 
-- Their human staff will use this file to assist their course learners.
-- We will build an LLM based question and answer system that can reduce the workload of their human staff.
-- Students should be able to use this system to ask questions directly and get answers within seconds
+### Objective
+The primary goal of this project is to develop a robust Q&A system that empowers students to ask questions and receive prompt answers, reducing the workload on human staff and enhancing the overall learning experience.
 
-## You will learn following,
-  - Langchain + Google Palm: LLM based Q&A
-  - Streamlit: UI
-  - Huggingface instructor embeddings: Text embeddings
-  - FAISS: Vector databse
+### Tech Stack Used
+1. Google Palm LLM and Langchain: Integration of Google Palm LLM for language understanding and processing through Langchain.
 
-## Installation
+2. Streamlit: Utilized to create an intuitive user interface (UI) for students to interact with the Q&A system seamlessly.
 
-1.Clone this repository to your local machine using:
+3. Hugging Face Instructor Embeddings: Implementation of text embeddings to enhance the understanding and contextual analysis of questions.
 
-```bash
-  git clone https://github.com/codebasics/langchain.git
-```
-2.Navigate to the project directory:
+4. FAISS: Integration of Facebook AI Similarity Search for efficient vector database operations, contributing to faster retrieval of relevant information.
 
-```bash
-  cd 3_project_codebasics_q_and_a
-```
-3. Install the required dependencies using pip:
+### Technical Architecture 
 
-```bash
-  pip install -r requirements.txt
-```
-4.Acquire an api key through makersuite.google.com and put it in .env file
+![](Technical_Architecture.jpg)
 
-```bash
-  GOOGLE_API_KEY="your_api_key_here"
-```
+## Project Highlights:
+
+1. CSV Integration: Utilizes a real CSV file with FAQs from Codebasics as a knowledge base.
+
+2. Human Staff Support: Aids human staff in assisting course learners by leveraging the FAQ CSV file, streamlining support.
+
+3. LLM-Based Q&A: Core functionality relies on Langchain and Google Palm's LLM for precise and quick responses.
+
+4. Interactive Streamlit UI: Empowers students to ask questions directly and receive instant answers, fostering a dynamic learning environment.
+
 ## Usage
-
-1. Run the Streamlit app by executing:
-```bash
-streamlit run main.py
-
-```
-
-2.The web app will open in your browser.
-
-- To create a knowledebase of FAQs, click on Create Knolwedge Base button. It will take some time before knowledgebase is created so please wait.
-
-- Once knowledge base is created you will see a directory called faiss_index in your current folder
-
-- Now you are ready to ask questions. Type your question in Question box and hit Enter
+- Execute the Streamlit app: streamlit run main.py
+- The web app will open in your browser, providing an interface to interact with the Q&A system.
 
 ## Sample Questions
-  - Do you guys provide internship and also do you offer EMI payments?
-  - Do you have javascript course?
-  - Should I learn power bi or tableau?
-  - I've a MAC computer. Can I use powerbi on it?
-  - I don't see power pivot. how can I enable it?
+Explore the system by asking questions like:
+
+- "Do you guys provide internship, and do you offer EMI payments?"
+- "Do you have a JavaScript course?"
+- "Should I learn Power BI or Tableau?"
+- "Can I use Power BI on my MAC computer?"
+- "How can I enable Power Pivot if I don't see it?"
 
 ## Project Structure
 
-- main.py: The main Streamlit application script.
-- langchain_helper.py: This has all the langchain code
-- requirements.txt: A list of required Python packages for the project.
-- .env: Configuration file for storing your Google API key.
+- main.py: The main script for the Streamlit application.
+- langchain_helper.py: Houses the code related to Langchain integration.
+- requirements.txt: A list of required Python packages for seamless execution.
+- .env: Configuration file for storing the Google API key.
+
+Inspired by: @codebasics.io
